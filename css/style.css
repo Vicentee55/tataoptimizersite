@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --detalhes: #e63946; /* Vermelho forte */
+    --detalhes2: #d33f3f; /* Vermelho mais escuro */
+  }
+
+body {
+    background: radial-gradient(circle, #1a0909, #1C1C1E);
+    color: var(--claro);
+}
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    background: #190e0eea;
+    font-weight: bold;
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu-link::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--detalhes), var(--detalhes2));
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Alinha os itens na vertical */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    background: radial-gradient(circle, #2c0d14, #1a0909);
+    height: 100vh; /* Define a altura do main para ocupar toda a altura da tela */
+  }
+  
+  .img {
+    width: 350px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+    transition: width 0.5s ease, transform 0.5s ease; 
+  }
+  
+  .img:hover {
+    transform: translateY(-10px) scale(1.03);
+  }
+  
+
+  h3 {
+    font-size: 3em; /* Tamanho maior do texto */
+    color: #fff; /* Cor do texto */
+    margin: 0; /* Remove qualquer margem padrão */
+  }
+  
+  .texto-inicio {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .destaque-inicio {
+    font-weight: bold;
+    color: #f73d3d;
+    border-right: 2px solid #fff;
+    display: block; /* Garante que o texto fique em uma nova linha */
+  }
+  
+  
+  #titulo-dinamico {
+    font-size: 3em; /* Aumenta o tamanho do título */
+  }
+  
+  
+  
+
+.sobre-and-services {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    height: 55.6rem;
+    background: radial-gradient(circle, #2c0d14, #1a0909);
+
+}
+
+.sobre-content-left {
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-content-right {
+    border: 1px solid rgb(140, 0, 255);
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-img > img {
+    transition: width 0.5s ease, transform 0.5s ease; 
+    width: 100%; 
+  }
+  
+  .sobre-img > img:hover {
+    transform: translateY(-10px) scale(1.03); 
+  }
+  
+
+.sobre-content-right>.sobre-mim-title {
+    width: 90%;
+    height: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza horizontalmente */
+}
+
+.sobre-content-right>.sobre-mim-title>h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+    /* Garante que o texto ficará centralizado */
+}
+
+.sobre-content-right>.sobre-mim-title>p {
+    padding-left: 40px;
+    font-size: 1.15em;
+    margin-bottom: 20px;
+}
+
+.sobre-content-right>.sobre-mim-title>.p1 {
+    margin-bottom: 3em;
+}
+
+.destaque {
+    color: #f73d3d;
+}
