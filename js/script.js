@@ -1,4 +1,4 @@
-const palavras = ["Tata Optimizer", "Aumente seu Fps", "Reduza o seu input lag"];
+const palavras = ["Aumente seu Fps", "Reduza o seu imput lag", "Para todos Computadores];
 let i = 0;
 let j = 0;
 let apagando = false;
@@ -23,3 +23,4 @@ function digitar() {
 }
 
 digitar();  // Inicia a digitação
+
